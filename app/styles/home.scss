@@ -1,0 +1,179 @@
+body, html {
+	background: #09090b;
+}
+
+.scroll-container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #09090b;
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+}
+  
+/* Each slide is absolutely centered by default */
+.slide-container {
+	position: absolute;
+	align-items: flex-start;
+	background: #030712;
+	border-radius: 1rem;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 80rem;
+	gap: 2rem;
+	transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	display: flex;
+	padding: 1rem;
+	box-shadow: #6d28d9 0rem 2rem 15rem;
+}
+
+.chart-wrapper {
+	flex: 1;
+	padding-right: 1rem;
+}
+
+.vertical-wrapper {
+	flex: 1;
+	background: black;
+	border-radius: 0.75rem;
+	overflow: hidden;
+	position: relative;
+	aspect-ratio: 9/16;
+	max-height: 80vh;
+	display: flex;
+	flex-direction: column; 
+
+	.subtitle-wrapper {
+		user-select: none;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		padding: 2rem;
+		display: grid;
+
+		align-items: center;
+		text-align: center;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		letter-spacing: 0.05rem;
+		color: #fff;
+		-webkit-text-stroke: 0.1175rem black;
+		font-weight: 900;
+	}
+
+	.top, .bottom {
+		background: gray;
+		position: relative;
+		flex: 1;
+		aspect-ratio: 9 / 8;
+	}
+
+	.character-profile {
+		display: block;
+		position: absolute;
+		bottom: 2rem;
+		right: 1rem;
+		max-width: 60%;
+		max-height: 70%;
+
+		&[alt="Fish"] {
+			bottom: 0;
+			right: 10%;
+			max-width: 80%;
+		}
+	
+		&[alt="Rick"] {
+			bottom: 5%;
+			left: 0;
+			max-width: 80%;
+		}
+	
+		&[alt="Omni"] {
+			left: 0;
+			max-width: 80%;
+		}
+	}
+
+	.top video {
+		object-position: bottom;
+	}
+
+	.bottom video {
+		object-position: center;
+	}
+
+	.top, .bottom {
+		position: relative;
+		flex: 1;
+	}
+
+	.top video, .bottom video {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
+
+	
+	.controls {
+		color: white;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+		width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
+
+		button {
+			margin: 1rem 1.2rem;
+			
+			svg {
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 1272px) {
+	.chart-wrapper {
+		display: none;
+	}
+	
+	.slide-container {
+		width: min(90vw, 40rem);
+		gap: 0;
+	}
+}
+	
+@media (max-width: 640px) {
+	.vertical-wrapper {
+		max-height: 70vh;
+	}
+	
+	.subtitle-wrapper {
+		font-size: 1.1rem;
+		padding: 1rem;
+	}
+	
+	.controls button svg {
+		width: 2rem;
+		height: 2rem;
+	}
+}
+
+.stock-header {
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 4rem;
+	color: #fff;
+	margin-left: 2rem;
+}
