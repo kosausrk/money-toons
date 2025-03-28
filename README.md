@@ -32,7 +32,7 @@ MoneyToons uses generative AI to create engaging, short-form video content about
 ## Preview
 ![money-toons](money-toons-preview.png)
 
-* **Live Site:** [finance-bros.vercel.app](finance-bros.vercel.app)
+* **Live Site:** [finance-bros.vercel.app](https://finance-bros.vercel.app/)
 
 
 ## Development Team
