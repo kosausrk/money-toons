@@ -2,6 +2,13 @@
 
 MoneyToons uses generative AI to create engaging, short-form video content about finance. Instead of traditional, often dull financial analysis, MoneyToons delivers information through entertaining, AI-generated videos featuring popular characters.
 
+## Preview
+![money-toons](money-toons-preview.png)
+
+* **Live Site:** [finance-bros.vercel.app](https://finance-bros.vercel.app/)
+
+
+
 ## Features
 
 * **AI-Generated Finance Content:** Turns complex financial data into digestible short videos.
@@ -28,11 +35,6 @@ MoneyToons uses generative AI to create engaging, short-form video content about
 * TypeScript
 * Polygon API
 * Google Cloud
-
-## Preview
-![money-toons](money-toons-preview.png)
-
-* **Live Site:** [finance-bros.vercel.app](https://finance-bros.vercel.app/)
 
 
 ## Development Team
